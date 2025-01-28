@@ -10,4 +10,4 @@ The first template prepares the infrastructure for the deployment. It creates a 
 The second template deploys an ECS cluster with a Keycloak service running on Fargate, an Auto Scaling group for the ECS tasks, an Application Load Balancer (ALB) and Route 53 DNS configuration.
 
 Here is the architecture diagram of the solution:
-https://github.com/Silas-cloudspace/PROJECTS-AWS-CLOUDFORMATION/blob/main/deploying_keycloak_in_ecs/diagram/Keyclaok-ECS-RDS.png?raw=true 
+![Keycloak Deployment Diagram](https://github.com/Silas-cloudspace/PROJECTS-AWS-CLOUDFORMATION/blob/main/deploying_keycloak_in_ecs/diagram/Keyclaok-ECS-RDS.png?raw=true)
