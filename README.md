@@ -12,7 +12,7 @@ The second template deploys an ECS cluster with a Keycloak service running on Fa
 
 Here is the architecture diagram of the solution:
 
-![Architecture diagram](diagram/Keyclaok-ECS-RDS.png)
+![Architecture diagram][(diagram/Keyclaok-ECS-RDS.png)](https://github.com/Silas-cloudspace/PROJECTS-AWS-CLOUDFORMATION/blob/main/deploying_keycloak_in_ecs/diagram/Keyclaok-ECS-RDS.png?raw=true)
 
 ### Prerequisites to deploy this solution
 - AWS account with appropriate permissions. We are using us-east-1 region in this project but you can use your region of choice
@@ -170,7 +170,7 @@ aws cloudformation create-stack --stack-name keycloak-ecs-alb --template-body fi
 ## 4. Testing the Application
 After the stack is created, you can access the web application by using your domain name with HTTPS which is provided in the stack outputs. You can just open the URL with your browser. You should see the Keycloak administration console login page. Retrieve the admin credentials from the secret KeycloakSecret in AWS Secrets Manager. After a successful login, you should see the following Keycloak Welcome page. Navigate in the application to create users, groups, roles...
 
-![Keycloak Welcome page](diagram/Keycloak-Welcome.png)
+![Keycloak Welcome page][(diagram/Keycloak-Welcome.png)](https://github.com/Silas-cloudspace/PROJECTS-AWS-CLOUDFORMATION/blob/main/deploying_keycloak_in_ecs/diagram/Keyclaok-ECS-RDS.png?raw=true)
 
 
 To go further, you can create a web application that will authenticate the users with Keycloak and send requests to a REST API. The API will then use Keycloak to validate the security tokens and authorize/deny the user request.
