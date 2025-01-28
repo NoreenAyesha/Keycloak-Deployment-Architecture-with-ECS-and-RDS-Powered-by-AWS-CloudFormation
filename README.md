@@ -171,7 +171,7 @@ aws cloudformation create-stack --stack-name keycloak-ecs-alb --template-body fi
 ## 4. Testing the Application
 After the stack is created, you can access the web application by using your domain name with HTTPS which is provided in the stack outputs. You can just open the URL with your browser. You should see the Keycloak administration console login page. Retrieve the admin credentials from the secret KeycloakSecret in AWS Secrets Manager. After a successful login, you should see the following Keycloak Welcome page. Navigate in the application to create users, groups, roles...
 
-![Keycloak Deployment Diagram][(https://github.com/Silas-cloudspace/PROJECTS-AWS-CLOUDFORMATION/blob/main/deploying_keycloak_in_ecs/diagram/Keyclaok-ECS-RDS.png?raw=true)](https://github.com/Silas-cloudspace/PROJECTS-AWS-CLOUDFORMATION/blob/main/deploying_keycloak_in_ecs/diagram/Keycloak-Welcome.png?raw=true)
+![Keycloak Welcome Diagram](https://github.com/Silas-cloudspace/PROJECTS-AWS-CLOUDFORMATION/blob/main/deploying_keycloak_in_ecs/diagram/Keycloak-Welcome.png?raw=true)
 
 
 
